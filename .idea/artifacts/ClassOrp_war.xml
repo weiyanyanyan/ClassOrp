@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ClassOrp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ClassOrp.war">
+      <element id="artifact" artifact-name="ClassOrp:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="class_orp@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="class_orp">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="auth"/>
+    <schema id="4" parent="1" name="db_shiwu"/>
+    <schema id="5" parent="1" name="hibernate_1"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="logineclipse"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="performance_schema"/>
+    <schema id="10" parent="1" name="sakila"/>
+    <schema id="11" parent="1" name="shop"/>
+    <schema id="12" parent="1" name="spring"/>
+    <schema id="13" parent="1" name="springtest"/>
+    <schema id="14" parent="1" name="sshtest"/>
+    <schema id="15" parent="1" name="sys"/>
+    <schema id="16" parent="1" name="test"/>
+    <schema id="17" parent="1" name="vote"/>
+    <schema id="18" parent="1" name="wangba"/>
+    <schema id="19" parent="1" name="world"/>
+    <table id="20" parent="2" name="class_info"/>
+    <table id="21" parent="2" name="college_info"/>
+    <table id="22" parent="2" name="evaluation_info"/>
+    <table id="23" parent="2" name="major_info"/>
+    <table id="24" parent="2" name="question_info"/>
+    <table id="25" parent="2" name="question_problem"/>
+    <table id="26" parent="2" name="user_info"/>
+    <column id="27" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="28" parent="20" name="class_name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="29" parent="20" name="class_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="20" name="user_id">
+      <Position>4</Position>
+      <DataType>bigint(11)|0</DataType>
+    </column>
+    <column id="31" parent="20" name="teacher_id">
+      <Position>5</Position>
+      <DataType>bigint(11)|0</DataType>
+    </column>
+    <column id="32" parent="20" name="major_id">
+      <Position>6</Position>
+      <DataType>bigint(11)|0</DataType>
+    </column>
+    <key id="33" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id
+class_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="34" parent="21" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="35" parent="21" name="college_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="36" parent="21" name="college_name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="37" parent="21" name="major_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="38" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="22" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="40" parent="22" name="user_id">
+      <Position>2</Position>
+      <DataType>bigint(10)|0</DataType>
+    </column>
+    <column id="41" parent="22" name="question_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="42" parent="22" name="class_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="43" parent="22" name="teacher_id">
+      <Position>5</Position>
+      <DataType>bigint(10)|0</DataType>
+    </column>
+    <column id="44" parent="22" name="class_name">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="45" parent="22" name="score">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="46" parent="22" name="process_status">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="47" parent="22" name="identify_status">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="48" parent="22" name="major_id">
+      <Position>10</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="49" parent="22" name="idx_class_user_teacher">
+      <ColNames>user_id
+question_id
+class_id
+teacher_id</ColNames>
+    </index>
+    <key id="50" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="51" parent="23" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="52" parent="23" name="major_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="53" parent="23" name="major_name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="54" parent="23" name="user_id">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="55" parent="23" name="addf">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="56" parent="23" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="57" parent="24" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="58" parent="24" name="start_time">
+      <Position>2</Position>
+      <DataType>bigint(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="24" name="end_time">
+      <Position>3</Position>
+      <DataType>bigint(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="24" name="question_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="24" name="question_name">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="62" parent="24" name="question_id_UNIQUE">
+      <ColNames>question_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="63" parent="24" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id
+question_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="64" parent="24" name="question_id_UNIQUE">
+      <ColNames>question_id</ColNames>
+      <UnderlyingIndexName>question_id_UNIQUE</UnderlyingIndexName>
+    </key>
+    <column id="65" parent="25" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="66" parent="25" name="question_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="67" parent="25" name="question_description">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="68" parent="25" name="question_name">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <key id="69" parent="25" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="70" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="71" parent="26" name="user_id">
+      <Position>2</Position>
+      <DataType>bigint(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="72" parent="26" name="pass_word">
+      <Position>3</Position>
+      <DataType>bigint(10)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="73" parent="26" name="role">
+      <Position>4</Position>
+      <DataType>tinyint(2)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="74" parent="26" name="user_name">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <index id="75" parent="26" name="user_id_UNIQUE">
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="76" parent="26" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="77" parent="26" name="user_id_UNIQUE">
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>user_id_UNIQUE</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
